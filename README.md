@@ -39,10 +39,12 @@ https://openxlab.org.cn/apps/detail/SijieLyu/SpringFestQA
 
 ## 模型微调
     依据MBTI数据和QA对，使用Xtuner对InternLM-Chat-7B的性格和内在知识储备进行部分参数微调，形成微调后的模型SpringFest。
-    性格的训练出来但回答不太有用，要多轮对话才能体现人格，但大模型多轮对话能力有限，发现效果不如预期。【可以在gradio页面上增加I/E选项，后端可调用不同模型】
+    性格的训练出来但回答不太有用，要多轮对话才能体现人格，但大模型多轮对话能力有限，发现效果不如预期。
+    【可以在gradio页面上增加I/E选项，后端可调用不同模型】
 
 ## 构建知识库（RAG）
-    依据QA对，基于langchain框架构建进行embedding，形成外挂知识库，可以针对用户的 query 进行语义向量检索，得到与用户提问相关的知识片段。【可以在页面上增加prompt提示】
+    依据QA对，基于langchain框架构建进行embedding，形成外挂知识库，可以针对用户的 query 进行语义向量检索，得到与用户提问相关的知识片段。
+    【可以在页面上增加prompt提示】
     Prompt调优
     当知识库内容不足时，转而激发微调后的SpringFest大模型能力，用incontext-learning的方法给模型展示正确的例子生成回答，
     包括但不限于：
@@ -53,7 +55,9 @@ https://openxlab.org.cn/apps/detail/SijieLyu/SpringFestQA
 ## ModelScope模型
 ### 模型权重下载(代码中已内置下载，不需要操作)
     https://www.modelscope.cn/binbeing/SpringFestQA.git
-    SpringFestQA是InternLM2为底座模型，使用春节话题数据集和性格数据集，通过XTuner进行微调后获得的模型。可安装modelscope库后按以下命令进行下载：
+    SpringFestQA是InternLM2为底座模型，使用春节话题数据集和性格数据集，通过XTuner进行微调后获得的模型。
+    
+    可安装modelscope库后按以下命令进行下载：
     ```
     import torch
     from modelscope import snapshot_download, AutoModel, AutoTokenizer
