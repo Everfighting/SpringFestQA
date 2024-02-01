@@ -225,8 +225,16 @@ def main():
     robot_avator = "assets/robot.jpeg"
     logo_avator = "assets/logo.jpeg"
 
-    st.image(logo_avator, caption='SpringFestQA')
+    col1, col2, col3 = st.columns([1,1,1])
 
+    with col1:
+        st.write("")
+
+    with col2:
+        st.image(logo_avator, caption='SpringFestQA')
+
+    with col3:
+        st.write("")
     generation_config = prepare_generation_config()
 
     # Initialize chat history
