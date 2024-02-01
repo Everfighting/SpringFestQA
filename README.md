@@ -1,4 +1,9 @@
 # SpringFestQA（年关走亲访友渡劫助手）
+
+<div align="center">
+    <img src="https://github.com/Everfighting/SpringFestQA/blob/main/assets/logo.jpeg" width=30% />
+</div>
+
 ## 介绍
     SpringFestQA（年关走亲访友渡劫助手）收集了网络上中国春节的怼亲戚语录，
     基于InternLM2进行微调以及检索增强链生成的模仿年轻人语气对亲戚提问作出巧妙回答的语言模型。
