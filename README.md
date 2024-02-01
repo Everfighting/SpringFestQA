@@ -1,8 +1,8 @@
-# SpringFestQA（年关走亲访友渡劫助手）
-
 <div align="center">
     <img src="https://github.com/Everfighting/SpringFestQA/blob/main/assets/logo.jpeg" width=30% />
 </div>
+
+# SpringFestQA（年关走亲访友渡劫助手）
 
 ## 介绍
     SpringFestQA（年关走亲访友渡劫助手）收集了网络上中国春节的怼亲戚语录，
